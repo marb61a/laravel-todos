@@ -1,6 +1,6 @@
 <?php
 
-use Faker\Generator as Faker;
+//use Faker\Generator as Faker;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,8 +24,8 @@ $factory->define(App\User::class, function (Faker $faker) {
     ];
 });
 
-$faker->define(App\Todo::class, function(Faker\Generator $faker){
+$factory->define(App\Todo::class, function(Faker\Generator $faker){
 	return [
-
+		'todo' => $faker->sentence(10)
 	];
 });
